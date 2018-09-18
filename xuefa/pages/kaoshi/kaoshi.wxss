@@ -1,0 +1,22 @@
+.kaoshibut {
+    display: flex;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zhuanfa {
+    display: flex;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.mingyan {
+    display: flex;
+    width: 93%;
+    flex-wrap: wrap;
+    color: #6495ED;
+    word-spacing: 10px;
+}

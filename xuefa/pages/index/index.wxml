@@ -1,0 +1,67 @@
+<view bindtap="zanzhu" class="zanzhu" style="margin:0px 0.5px" wx:if="{{zanzhu2==1}}">
+    <image class="user-avatar" mode="aspectFit" src="../index/zz.jpg" style="width: 370px; height: 900px;margin:3px;"></image>
+</view>
+<view bindtap="zanzhu" class="zanzhu" style="margin:0px 0.5px" wx:if="{{zanzhu2==2}}">
+    <image class="user-avatar" mode="aspectFit" src="../index/yn.jpg" style="width: 370px; height: 900px;margin:3px;"></image>
+</view>
+<view bindtap="zanzhu" class="zanzhu" style="margin:0px 0.5px" wx:if="{{zanzhu2==3}}">
+    <image class="user-avatar" mode="aspectFit" src="../index/xj.jpg" style="width: 370px; height: 900px;margin:3px;"></image>
+</view>
+<view bindtap="zanzhu" class="zanzhu" style="margin:0px 0.5px" wx:if="{{zanzhu2==4}}">
+    <image class="user-avatar" mode="aspectFit" src="../index/sx.jpg" style="width: 370px; height: 900px;margin:3px;"></image>
+</view>
+<view class="quanju" wx:if="{{zanzhu2==0}}">
+    <view class="qiehuan">
+        <button bindtap="qiehuan" size="mini" trpe="primary"> 切换 </button>
+    </view>
+    <view class="qiehuan">
+        <button bindtap="zizhu" size="mini" trpe="primary"> 自助 </button>
+    </view>
+    <view class="container">
+        <view bindtap="binclickxx" class="xuexiqiandao"> 学习签到  
+      
+    
+     </view>
+        <view class="zhuanfa">
+            <button openType="contact" style="line-height:40rpx;">问题点我</button>
+            <button bindtap="onShareAppMessage" openType="share" style="line-height:40rpx;">转发分享</button>
+        </view>
+        <view class="body-view">
+            <text class="user-motto" style="color:#6495ED">{{kaitong}}</text>
+            <text bindtap="zanzhu2" class="user-motto" style=" margin: 1rpx 2rpx;" wx:if="{{genghuan==1}}">~更换</text>
+            <text style=" margin: 0rpx 50rpx;"> {{shijianzhi}}:{{second}}</text>
+            <text bindtap="tuichu" class="user-motto" style=" margin: 0rpx 95rpx;">退出</text>
+        </view>
+        <view class="guanzhu" wx:if="{{guanzhu==1}}">
+            <button openType="contact" style="line-height:40rpx;" type="warn">关注公众号</button>
+        </view>
+        <view class="neirong">
+            <text wx:for="{{usermsg}}">
+      {{item}}
+</text>
+        </view>
+        <view class="neirong">
+            <text wx:for="{{xm}}">
+       {{item}}
+      </text>
+            <view class="zanzhu" wx:if="{{zanzhu==1}}">
+                <button bindtap="zanzhu2" size="mini" style="color: #48c23d" trpe="primary"> 赞助 </button>
+            </view>
+        </view>
+        <view class="neirong">
+            <text wx:for="{{drjf}}">
+       {{item}}
+      </text>
+        </view>
+        <view class="neirong">
+            <text wx:for="{{zjf}}">
+       {{item}}
+      </text>
+        </view>
+        <view class="mingyan">
+            <text wx:for="{{mingyan}}">
+       {{item}}
+      </text>
+        </view>
+    </view>
+</view>

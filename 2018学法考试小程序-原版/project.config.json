@@ -1,0 +1,37 @@
+
+{
+  "description": "项目配置文件。",
+  "packOptions": { //打包配置选项
+    "ignore": [] //配置打包时对符合指定规则的文件或文件夹进行忽略，跳过打包的过程，这些文件或文件夹不会出现在预览或上传的结果内
+  },
+  "setting": { //项目设置
+    "urlCheck": true, //是否检查安全域名和TLS版本
+    "es6": true, //是否启用es5转es6
+    "postcss": true, //上传代码时样式是否自动补全
+    "minified": true, //上传代码时是否自动压缩
+    "newFeature": true
+  },
+  "compileType": "miniprogram", //编译类型,miniprogram当前为普通小程序项目。plugin当前为小程序插件项目
+  "libVersion": "2.0.8", //基础库版本
+  "appid": "wx6d58280a9aeb39c6", //APPID，只在新建项目时读取
+  "projectname": "test2", //项目名称，只在新建项目时读取
+  "isGameTourist": false,
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "currentL": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": -1,
+      "list": []
+    }
+  }
+}

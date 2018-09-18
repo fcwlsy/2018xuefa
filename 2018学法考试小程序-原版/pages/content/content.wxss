@@ -1,0 +1,9 @@
+.biji {
+    border-color: darkgray;
+    display: flex;
+    border-style: solid;
+    border-width: 1rpx;
+    margin: 40rpx 5%;
+    width: 650rpx;
+    height: 350rpx;
+}

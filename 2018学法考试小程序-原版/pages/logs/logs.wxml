@@ -1,0 +1,23 @@
+<view class="qiehuan" style=" margin:2rpx;">
+    <button bindtap="qiehuan" size="mini" trpe="primary"> 快速登陆 </button>
+</view>
+<view class="input">
+    <input bindinput="usernameinput" focus="Boolean" placeholder="学法登录账号........." type="number"></input>
+</view>
+<view class="input">
+    <input bindinput="passwordinput" placeholder="学法登录密码........."></input>
+</view>
+<view class="denglu">
+    <button bindtap="binclick" trpe="primary"> 登录 </button>
+</view>
+<view class="guanzhu" wx:if="{{guanzhu==1}}">
+    <button openType="contact" style="line-height:40rpx;" type="warn">关注公众号</button>
+    <text>
+ 点-关注公众号,发送数字1</text>
+</view>
+<view class="zhuanfa">
+    <button bindtap="onShareAppMessage" openType="share" style="line-height:40rpx;">转发分享</button>
+</view>
+<view class="zhuanfa">
+    <button openType="contact" style="line-height:40rpx;">问题点我</button>
+</view>

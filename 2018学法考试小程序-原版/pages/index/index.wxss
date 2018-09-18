@@ -1,0 +1,78 @@
+input {
+    border: 1px solid cornflowerblue;
+}
+
+.qiehuan {
+    margin: 0% 5rpx;
+}
+
+.xuexiqiandao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    margin: 2% 40%;
+    border-radius: 50%;
+    transition: all .7s;
+    background-color: #48c23d;
+}
+
+.zhuanfa {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.kefu {
+    display: flex;
+}
+
+.zanzhu {
+    margin: 22rpx 8rpx;
+}
+
+.lianxi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 38rpx;
+    height: 178rpx;
+    margin: 25rpx 0.1rpx;
+    border-style: solid;
+    border-color: darkgray;
+    border-width: 1rpx;
+    background-color: #f8f8f8;
+}
+
+.body-view {
+    display: block;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 2% 0%;
+}
+
+.neirong {
+    display: flex;
+    margin: 2% 20%;
+    text-align: center;
+}
+
+.mingyan {
+    display: flex;
+    width: 93%;
+    flex-wrap: wrap;
+    color: #6495ED;
+    word-spacing: 10px;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}

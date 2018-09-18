@@ -1,0 +1,15 @@
+<view style="display:flex;flex-direction:column;">
+    <view style="mrgin-bottom:10px;padding:6px;border-bottom:4px solid #efeff3;background-color: #00ccff;height:40px;">
+        <text style="color:#ffffff;display:flex;justify-content:center;margin-top:10px;margin-bottom:10px;">心情日记</text>
+    </view>
+    <view class="biji">
+        <input bindinput="usernameinput" focus="{{focus}}" placeholder="输入内容....................................................... "></input>
+    </view>
+    <view class="btn-area">
+        <view class="body-view">
+            <button bindtap="add" style="margin:5rpx;">添加</button>
+            <button bindtap="remove" style="margin:5rpx;">删除</button>
+            <text>{{text}}</text>
+        </view>
+    </view>
+</view>

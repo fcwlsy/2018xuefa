@@ -1,0 +1,57 @@
+.log-list {
+    display: flex;
+    flex-direction: column;
+    padding: 40rpx;
+}
+
+.log-item {
+    margin: 10rpx;
+}
+
+.lianxi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 38rpx;
+    height: 178rpx;
+    margin: 25rpx 0.1rpx;
+    border-style: solid;
+    border-color: darkgray;
+    border-width: 1rpx;
+    background-color: #f8f8f8;
+}
+
+.zhuanfa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23rpx;
+    height: 178rpx;
+    margin: 60rpx 0.1rpx;
+}
+
+.input {
+    border-color: darkgray;
+    display: flex;
+    border-style: solid;
+    border-width: 1rpx;
+    margin: 40rpx 17%;
+    width: 500rpx;
+    height: 58rpx;
+}
+
+.denglu {
+    width: 500rpx;
+    margin: 35rpx 17%;
+}
+
+.lianxi1 {
+    width: 500rpx;
+    margin: 40rpx 17%;
+    color: #6495ED;
+}
+
+.guanzhu {
+    width: 180px;
+    margin: 40rpx 26%;
+}

@@ -1,0 +1,100 @@
+<view style="mrgin-bottom:10px;padding:6px;border-bottom:4px solid #efeff3;background-color: #00ccff;height:40px;">
+    <text style="color:#ffffff;display:flex;justify-content:center;margin-top:10px;margin-bottom:10px;">答题中心</text>
+</view>
+<view>
+    <text style="margin:30px 13px">{{tixing}}</text>
+</view>
+<view>
+    <text style="margin:30px 13px">({{tishu+1}}/50)</text>
+</view>
+<view style="margin:15px 0px;">
+    <text style="margin:30px 18px;">{{timu[0]}}</text>
+</view>
+<view class="datiqu" wx:if="{{tishu<=19}}">
+    <view class="daan">
+        <radio-group bindchange="radioChange" class="radio-group">
+            <view style="border-top:1px solid #efeff3;margin:20px 15px;">
+                <label class="radio" wx:for="{{items[0]}}">
+                    <radio checked="{{item.checked}}" value="A"></radio>{{A}}{{daan[0]}}
+    
+  </label>
+            </view>
+            <view style="border-top:1px solid #efeff3;margin:15px 15px;">
+                <label class="radio" wx:for="{{items[0]}}">
+                    <radio checked="{{item.checked}}" value="{{item.name}}"></radio>{{B}}{{daan[1]}}
+    
+  </label>
+            </view>
+            <view style="border-top:1px solid #efeff3;margin:15px 15px;">
+                <label class="radio" wx:for="{{items[0]}}">
+                    <radio checked="{{item.checked}}" value="{{item.name}}"></radio>{{C}}{{daan[2]}}
+    
+  </label>
+            </view>
+            <view style="border-top:1px solid #efeff3;margin:15px 15px;">
+                <label class="radio" wx:for="{{items[0]}}">
+                    <radio checked="{{item.checked}}" value="{{item.name}}"></radio>{{D}}{{daan[3]}}
+    
+  </label>
+            </view>
+        </radio-group>
+    </view>
+</view>
+<view class="datiqu" wx:if="{{tishu>=40}}">
+    <view class="daan">
+        <radio-group bindchange="radioChange" class="radio-group">
+            <view style="border-top:1px solid #efeff3;margin:20px 15px;">
+                <label class="radio" wx:for="{{items[0]}}">
+                    <radio checked="{{item.checked}}" value="{{item.name}}"></radio>{{A}}{{daan[0]}}
+    
+  </label>
+            </view>
+            <view style="border-top:1px solid #efeff3;margin:15px 15px;">
+                <label class="radio" wx:for="{{items[0]}}">
+                    <radio checked="{{item.checked}}" value="{{item.name}}"></radio>{{B}}{{daan[1]}}
+    
+  </label>
+            </view>
+        </radio-group>
+    </view>
+</view>
+<view class="datiqu" wx:if="{{tishu>=20&&tishu<=39}}">
+    <view style="border-top:1px solid #efeff3;margin:15px 15px;">
+        <checkbox-group bindchange="checkboxChange">
+            <label class="checkbox" wx:for="{{items[0]}}">
+                <checkbox checked="{{item.checked}}" value="{{item.name}}"></checkbox>{{A}}{{daan[0]}}
+  </label>
+        </checkbox-group>
+    </view>
+    <view style="border-top:1px solid #efeff3;margin:15px 15px;">
+        <checkbox-group bindchange="checkboxChange">
+            <label class="checkbox" wx:for="{{items[0]}}">
+                <checkbox checked="{{item.checked}}" value="{{item.name}}"></checkbox>{{B}}{{daan[1]}}
+  </label>
+        </checkbox-group>
+    </view>
+    <view style="border-top:1px solid #efeff3;margin:15px 15px;">
+        <checkbox-group bindchange="checkboxChange">
+            <label class="checkbox" wx:for="{{items[0]}}">
+                <checkbox checked="{{item.checked}}" value="{{item.name}}"></checkbox>{{C}}{{daan[2]}}
+  </label>
+        </checkbox-group>
+    </view>
+    <view style="border-top:1px solid #efeff3;margin:15px 15px;">
+        <checkbox-group bindchange="checkboxChange">
+            <label class="checkbox" wx:for="{{items[0]}}">
+                <checkbox checked="{{item.checked}}" value="{{item.name}}"></checkbox>{{D}}{{daan[3]}}
+  </label>
+        </checkbox-group>
+    </view>
+</view>
+<view style="margin:40px 15px;">
+    <text style="color:#FF0000">参考答案：{{timu[2]}}</text>
+</view>
+<view class="zhuanfa" wx:if="{{tishu>=3}}">
+    <button openType="contact" style="line-height:40rpx;" type="warn">{{kaitong}}</button>
+</view>
+<view class="syt">
+    <button bindtap="xiayiti" id="x" type="default"> 下一题 </button>
+    <button bindtap="xiayiti" id="j" style="margin-left:40rpx;" type="warn"> 交 卷 </button>
+</view>

@@ -1,0 +1,53 @@
+<view bindtap="zanzhu" class="zanzhu" style="margin:0px 0.5px" wx:if="{{zanzhu2==1}}">
+    <image class="user-avatar" mode="aspectFit" src="../index/zz-k.jpg" style="width: 370px; height: 900px;margin:3px;"></image>
+</view>
+<view bindtap="zanzhu" class="zanzhu" style="margin:0px 0.5px" wx:if="{{zanzhu2==2}}">
+    <image class="user-avatar" mode="aspectFit" src="../index/yn-k.jpg" style="width: 370px; height: 900px;margin:3px;"></image>
+</view>
+<view bindtap="zanzhu" class="zanzhu" style="margin:0px 0.5px" wx:if="{{zanzhu2==3}}">
+    <image class="user-avatar" mode="aspectFit" src="../index/xj-k.jpg" style="width: 370px; height: 900px;margin:3px;"></image>
+</view>
+<view bindtap="zanzhu" class="zanzhu" style="margin:0px 0.5px" wx:if="{{zanzhu2==4}}">
+    <image class="user-avatar" mode="aspectFit" src="../index/sx-k.jpg" style="width: 370px; height: 900px;margin:3px;"></image>
+</view>
+<view class="quanju" wx:if="{{zanzhu2==0}}">
+    <view style="mrgin-bottom:10px;padding:6px;border-bottom:4px solid #efeff3;background-color: #00ccff;height:40px;">
+        <text style="color:#ffffff;display:flex;justify-content:center;margin-top:10px;margin-bottom:10px;">练习中心</text>
+    </view>
+    <view class="kaoshi" style="mrgin-bottom:10px;padding:6px;border-bottom:4px solid #efeff3;">
+        <text style="font-size:25:px;font-size:22px">{{biaoti}}</text>
+        <text style="margin:60px;color:#6495ED">{{kt}}</text>
+        <view style="margin:10px;">
+            <text style="margin:10px 5px;font-size:18px;color:#FF0000">得分:{{fengshu}}</text>
+        </view>
+        <view style="margin:10px;">
+            <text style="margin:10px 5px;font-size:15px">{{shijian}}</text>
+        </view>
+        <view class="kaoshibut">
+            <button bindtap="kaoshi" id="x" trpe="primary"> 开始答题 </button>
+        </view>
+    </view>
+    <view class="zhuanfa" wx:if="{{kefu==1}}">
+        <button bindtap="zanzhu2" style="line-height:40rpx;" type="warn">{{kaitong}}</button>
+    </view>
+    <view wx:if="{{kefu==2}}">
+        <text style="margin:60px;color:#FF0000">请到个人中心,点-切换-刷新页面!</text>
+    </view>
+    <view class="kaoshi" style="mrgin-bottom:10px;padding:6px;border-bottom:4px solid #efeff3;">
+        <text style="font-size:25:px;font-size:22px">模拟试用</text>
+        <view style="margin:10px;">
+            <text style="margin:10px 5px;font-size:18px">得分:{{fengshu}}</text>
+        </view>
+        <view style="margin:10px;">
+            <text style="margin:10px 5px;font-size:15px">{{shijian}}</text>
+        </view>
+        <view class="kaoshibut">
+            <button bindtap="kaoshi" id="s" trpe="primary"> 模拟试用 </button>
+        </view>
+        <view class="mingyan">
+            <text wx:for="{{shuoming}}">
+       {{item}}
+      </text>
+        </view>
+    </view>
+</view>
